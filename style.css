@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+div {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+    background-color: orange;
+}
+
+@keyframes rotattte {
+    0% {
+        transform: rotateY(-90deg) translateZ(50px)
+    }
+
+    80% {
+        transform: rotateY(90deg) translateZ(50px)
+    }
+
+    100% {
+        transform: rotateY(90deg) translateZ(50px)
+    }
+}
+
+#slow {
+    animation: 3s infinite rotattte;
+}
+
+#fast {
+    animation: 1s infinite rotattte;
+}
+
+#veryfast {
+    animation: 0.5s infinite rotattte;
+}
